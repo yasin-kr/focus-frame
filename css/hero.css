@@ -58,7 +58,6 @@ body {
 }
 
 /* Hero Card */
-
 .hero {
   background-color: var(--black);
   background-image: url("../images/background.png");
@@ -69,7 +68,7 @@ body {
 /* Hero Content */
 .hero-content {
   padding-top: 40px;
-  max-width: 520px; /* tasarımdaki ideal metin genişliği */
+  max-width: 520px;
   width: 100%;
 }
 
@@ -104,7 +103,7 @@ body {
   padding-top: 20px;
 }
 
-/* --- Left (avatars) --- */
+/* Left (avatars) */
 .hero-reviews-left {
   display: flex;
   flex-direction: column;
@@ -146,7 +145,7 @@ body {
   display: block;
 }
 
-/* --- Happy students link --- */
+/* Happy students link */
 .hero-avatars-text {
   display: inline-flex;
   align-items: center;
