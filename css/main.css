@@ -1,9 +1,9 @@
-:root{
---black: #121212;
---black2: #1d1d1d;
---black3: #060707;
---brown: #bea69e;
---white: #fff;
+:root {
+  --black: #121212;
+  --black2: #1d1d1d;
+  --black3: #060707;
+  --brown: #bea69e;
+  --white: #fff;
 }
 
 .container {
@@ -26,4 +26,7 @@
     max-width: 1280px;
     padding: 0 64px;
   }
+}
+body {
+  font-family: "DM Sans", sans-serif;
 }
