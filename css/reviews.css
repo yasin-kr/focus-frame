@@ -83,17 +83,14 @@
 .review-star {
   width: 16px;
   height: 16px;
+  fill: currentColor;
+  stroke: currentColor;
   color: var(--brown);
-  stroke: var(--brown);
-  stroke-width: 1.5px;
-  stroke-linejoin: round;
-  stroke-linecap: round;
 }
 /* Last Star (Empty/Gray Look) */
 .stars-container .review-star:last-child {
-  color: #414141;
-  stroke: #414141;
-  stroke-width: 1.5px;
+  filter: grayscale(100%) brightness(0.5);
+  opacity: 0.6;
 }
 /* OTHER CONTENT AND UTILITY CLASSES */
 .review-text {
