@@ -1,0 +1,114 @@
+/* =========================
+   ABOUT SECTION – BASE
+========================= */
+
+.about {
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE */
+.about-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.about-highlight {
+  color: var(--brown);
+}
+
+/* =========================
+   DESKTOP LAYOUT (FIGMA)
+========================= */
+
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* IMAGE – CAPSULE */
+.about-thumb {
+  width: 560px;
+  height: 240px;
+  border-radius: 1000px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* TEXT – 2 COLUMNS */
+.about-text-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 560px;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ICON */
+.about-icon-box {
+  grid-column: span 2;
+  margin-top: 24px;
+}
+
+/* =========================
+   TABLET (≤1024px)
+   Yazılar aşağı iner
+========================= */
+
+@media screen and (max-width: 1024px) {
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-text-content {
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-thumb {
+    margin-bottom: 40px;
+  }
+}
+
+/* =========================
+   MOBILE (≤768px)
+   Alt alta tek sütun
+========================= */
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .about-thumb {
+    width: 100%;
+    height: 220px;
+  }
+
+  .about-text-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-icon-box {
+    grid-column: span 1;
+  }
+}
