@@ -3,7 +3,8 @@
 ========================= */
 
 .about {
-  padding: 80px 0;
+  padding-top: 120px;   /* Advertisement ile arayı açtık (Figma uyumlu) */
+  padding-bottom: 80px;
 }
 
 .about-container {
@@ -23,19 +24,20 @@
 }
 
 /* =========================
-   DESKTOP LAYOUT (FIGMA)
+   DESKTOP LAYOUT (≥1280px)
+   Figma birebir
 ========================= */
 
 .about-wrapper {
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
+  align-items: flex-start; /* resim ve yazılar üstten hizalı */
+  gap: 40px;               /* Figma gap */
 }
 
-/* IMAGE – CAPSULE */
+/* IMAGE – CAPSULE (FIGMA: 488 x 260) */
 .about-thumb {
-  width: 560px;
-  height: 240px;
+  width: 488px;        
+  height: 260px;       
   border-radius: 1000px;
   overflow: hidden;
   flex-shrink: 0;
@@ -52,7 +54,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  max-width: 560px;
+  flex: 1; /* kalan alanı doldurur */
 }
 
 .about-description {
@@ -69,7 +71,7 @@
 
 /* =========================
    TABLET (≤1024px)
-   Yazılar aşağı iner
+   Resim üstte, yazılar altta
 ========================= */
 
 @media screen and (max-width: 1024px) {
@@ -77,19 +79,19 @@
     flex-direction: column;
   }
 
-  .about-text-content {
-    max-width: 100%;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .about-thumb {
     margin-bottom: 40px;
+  }
+
+  .about-text-content {
+    grid-template-columns: 1fr 1fr; /* tablet: yazılar yan yana */
+    width: 100%;
   }
 }
 
 /* =========================
    MOBILE (≤768px)
-   Alt alta tek sütun
+   Her şey alt alta
 ========================= */
 
 @media screen and (max-width: 768px) {
@@ -104,7 +106,7 @@
   }
 
   .about-text-content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* yazılar alt alta */
     gap: 24px;
   }
 
