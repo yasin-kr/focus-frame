@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <section class="signup-section" id="signup">
+    <div class="signup-container">
+      <div class="signup-content">
+        <h2 class="signup-title">Sign <span>Up</span></h2>
+        <p class="signup-description">
+          Please use the form below to contact us. Enter your name, email, and
+          message and we'll get back to you shortly.
+        </p>
+
+        <form class="signup-form" name="contact-form" autocomplete="off">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              name="user-name"
+              class="signup-input"
+              placeholder="Enter your name"
+              required
+              pattern="[a-zA-Z\s]{2,}"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <input
+              type="email"
+              name="user-email"
+              class="signup-input"
+              placeholder="Enter your email"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+
+          <div class="input-wrapper">
+            <textarea
+              name="user-message"
+              class="signup-textarea"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="signup-btn">SEND</button>
+
+          <p class="privacy-text">
+            By clicking on "Send" button, you agree to our
+            <a href="#" class="privacy-link">Privacy Policy</a>, and allow
+            Promodo to use this information for marketing purposes.
+          </p>
+        </form>
+      </div>
+
+      <div class="signup-images">
+        <div class="image-wrapper lens-wrapper">
+          <img
+            src="../images/camera-1.png"
+            alt="Camera Lens"
+            class="camera-img"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="image-wrapper camera-wrapper">
+          <img
+            src="../images/camera-2.png"
+            srcset="../images/camera-2.png 1x, ../images/camera-2@2x.png 2x"
+            alt="Professional Camera"
+            class="camera-img"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</html>
