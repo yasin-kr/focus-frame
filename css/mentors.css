@@ -3,18 +3,13 @@
   --black2: #1d1d1d;
   --black3: #060707;
   --brown: #bea69e;
-  --white: #fff;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  --white: #ffffffR;
 }
 
 .container {
   max-width: 320px;
   padding: 0 16px;
+
   margin: 0 auto;
 }
 .mentors {
